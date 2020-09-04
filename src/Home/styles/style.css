@@ -1,0 +1,32 @@
+#home {
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+#home h1 {
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+  #home h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  #home h1 {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

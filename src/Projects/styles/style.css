@@ -1,0 +1,92 @@
+#projects {
+  height: 100%;
+  position: relative;
+  padding: 0 50px;
+}
+
+#projects h1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#projects .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding-top: 150px;
+}
+
+#projects .grid .project {
+  font-size: 20px;
+  height: 150px;
+  text-align: center;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects .grid .project ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .grid .project a {
+  text-decoration: none;
+  color: black;
+}
+
+#projects .grid .project a:nth-child(2) {
+  font-size: 30px;
+}
+
+#projects .grid .project a img {
+  width: 50px;
+  height: auto;
+}
+
+@media only screen and (max-width: 450px) {
+  #projects .grid {
+    padding-top: 100px;
+  }
+  #projects h1 {
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+  }
+  #projects section {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  #projects .grid {
+    padding-top: 100px;
+  }
+  #projects h1 {
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

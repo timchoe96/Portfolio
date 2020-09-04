@@ -1,0 +1,58 @@
+nav {
+  font-size: 20px;
+  height: 100%;
+  width: 150px;
+  border-right: 2px black solid;
+  font-family: "yeezy";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .desktopMenu {
+    list-style: none;
+    a {
+      color: inherit;
+      text-decoration: none;
+      li {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .mobileMenu {
+    display: none;
+    list-style: none;
+    a {
+      color: inherit;
+      text-decoration: none;
+      img {
+        width: 25px;
+        height: auto;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 50px;
+    .desktopMenu {
+      display: none;
+    }
+    .mobileMenu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  nav {
+    .mobileMenu {
+      a {
+        img {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
