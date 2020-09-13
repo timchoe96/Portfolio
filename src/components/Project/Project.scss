@@ -1,0 +1,94 @@
+.project {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+  &__container {
+    position: relative;
+  }
+  &__website {
+    width: 600px;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px 5px lightgray;
+    border-radius: 5px;
+  }
+
+  &__info {
+    width: 150px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  &__links {
+    font-size: 14px;
+
+    a {
+      margin-right: 10px;
+      &:hover {
+        text-decoration: none;
+        color: #007bff;
+      }
+    }
+  }
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #007bff;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project {
+    flex-direction: column;
+
+    &__website {
+      width: 100%;
+    }
+    &__info {
+      margin-left: 0;
+      width: auto;
+      margin-top: 30px;
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+    }
+    &__linkGroup {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project__container {
+  position: relative;
+}
+
+.project__website {
+  width: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-box-shadow: 5px 5px 10px 5px lightgray;
+          box-shadow: 5px 5px 10px 5px lightgray;
+  border-radius: 5px;
+}
+
+.project__info {
+  width: 150px;
+  margin-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project__title {
+  margin-bottom: 10px;
+}
+
+.project__paragraph {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.project__links {
+  font-size: 14px;
+}
+
+.project__links a {
+  margin-right: 10px;
+}
+
+.project__links a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #007bff;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project__website {
+    width: 100%;
+  }
+  .project__info {
+    margin-left: 0;
+    width: auto;
+    margin-top: 30px;
+  }
+  .project__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project__linkGroup {
+    margin-right: 20px;
+  }
+}
+/*# sourceMappingURL=Project.css.map */

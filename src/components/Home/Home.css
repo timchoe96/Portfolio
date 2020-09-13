@@ -1,0 +1,98 @@
+@-webkit-keyframes pointer {
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+@keyframes pointer {
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 150px 200px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.home > button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.home__container {
+  padding-bottom: 100px;
+  font-size: 40px;
+}
+
+.home__greeting {
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.home__intro {
+  font-weight: 200;
+}
+
+.home__intro > strong {
+  font-weight: 500;
+}
+
+.home__arrow {
+  position: absolute;
+  font-size: 50px;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 20px;
+  -webkit-animation: pointer 1.5s ease infinite;
+          animation: pointer 1.5s ease infinite;
+}
+
+@media only screen and (max-width: 1100px) {
+  .home {
+    padding: 80px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home__container {
+    font-size: 30px;
+  }
+  .home__arrow {
+    font-size: 40px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home {
+    padding: 50px;
+  }
+  .home__container {
+    padding-bottom: 50px;
+    font-size: 20px;
+  }
+  .home__arrow {
+    font-size: 30px;
+    margin-left: -15px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
