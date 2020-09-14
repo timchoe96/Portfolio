@@ -1,6 +1,6 @@
 .projects {
-  padding-top: 100px;
   margin: 0 auto;
+  margin-top: 200px;
   max-width: 1440px;
   display: flex;
   justify-content: space-evenly;
@@ -13,6 +13,7 @@
 
 @media only screen and (max-width: 1100px) {
   .projects {
+    margin-top: 100px;
     flex-direction: column;
     padding: 0 80px;
     &__title {

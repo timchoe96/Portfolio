@@ -74,7 +74,6 @@
 @media only screen and (max-width: 1100px) {
   .project {
     flex-direction: column;
-
     &__website {
       width: 100%;
     }
@@ -86,6 +85,8 @@
     &__links {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      margin: 0;
     }
     &__linkGroup {
       margin-right: 20px;

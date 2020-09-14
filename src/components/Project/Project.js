@@ -14,11 +14,13 @@ function Project({ website, sourcecode, weblink, info, title }) {
           alt=""
         ></img>
       </div>
-      <div className="project__info">
-        <div className="text-primary project__title">{title}</div>
-        <p className="project__paragraph">{info}</p>
+      <div className="project__info" data-aos="fade-left">
+        <div>
+          <div className="text-primary project__title">{title}</div>
+          <p className="project__paragraph">{info}</p>
+        </div>
         <div className="project__links">
-          <div className="project__linkGroup">
+          <div className="projects__linkGroup">
             <a
               className="hvr-underline-from-left"
               href={weblink}
@@ -27,9 +29,7 @@ function Project({ website, sourcecode, weblink, info, title }) {
             >
               Visit Website
             </a>
-            <BoxArrowInUpRight color="#007bff" size={15} />
           </div>
-
           <div className="projects__linkGroup">
             <a
               className="hvr-underline-from-left"
@@ -39,7 +39,6 @@ function Project({ website, sourcecode, weblink, info, title }) {
             >
               View Source Code
             </a>
-            <CodeSlash color="#007bff" size={15} />
           </div>
         </div>
       </div>
