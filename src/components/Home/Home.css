@@ -32,10 +32,21 @@
   max-width: 1440px;
 }
 
-.home > button {
+.home > a {
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 7px 12px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+}
+
+.home > a:hover {
+  color: white;
+  background: #007bff;
 }
 
 .home__container {

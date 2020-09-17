@@ -12,8 +12,6 @@ import "./App.css";
 import Footer from "./components/Footer/Footer.js";
 import Background from "./components/Background/Background.js";
 
-// import "hover.css/css/hover.css";
-
 AOS.init({ mirror: false, duration: 800, once: true });
 
 window.addEventListener("scroll", () => {

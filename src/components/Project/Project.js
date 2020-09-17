@@ -1,6 +1,5 @@
 import React from "react";
 import "./Project.css";
-import { BoxArrowInUpRight, CodeSlash } from "react-bootstrap-icons";
 
 function Project({ website, sourcecode, weblink, info, title }) {
   return (

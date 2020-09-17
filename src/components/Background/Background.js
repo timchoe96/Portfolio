@@ -18,7 +18,7 @@ function Background() {
         I could mix my passion for design and problem solving all in one.
         <br />
         <br />
-        The posibilities are endless, and I know that this is something that I
+        The possibilities are endless, and I know that this is something that I
         can see myself doing for the rest of my life. Check out some cool
         projects I've made below!
       </p>

@@ -4,7 +4,15 @@ import "./Home.css";
 function Home() {
   return (
     <div id="home" className="home">
-      <button className="btn btn-outline-primary">Resume</button>
+      <a
+        className="home__resume"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://drive.google.com/file/d/1cSNsLkNquRMnVDRf-_a1DVL14qx03C5n/view?usp=sharing"
+      >
+        Resume
+      </a>
+
       <div className="home__container ">
         <div className="home__greeting">
           Hello! <span>👋</span>
@@ -18,7 +26,7 @@ function Home() {
           Get in touch <span>: 👉 </span>
           <a
             className="hvr-shutter-out-horizontal"
-            href="emailto:timchoe96@gmail.com"
+            href="mailto:timchoe96@gmail.com"
           >
             timchoe96@gmail.com
           </a>

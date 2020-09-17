@@ -4,6 +4,7 @@ import Project from "../Project/Project";
 import untitled from "./images/untitled.png";
 import untitled__store from "./images/untitled__store.png";
 import amazon from "./images/amazon.png";
+import spotify from "./images/spotify.png";
 
 function Projects() {
   return (
@@ -27,11 +28,19 @@ function Projects() {
         />
 
         <Project
-          weblink="https://clone-659a6.web.app/"
+          weblink="https://clone-60890.web.app/"
           sourcecode="https://github.com/timchoe96/amazon-clone"
           website={amazon}
           title="Amazon Clone"
-          info="This is an Amazon clone made to resemble the Amazon store as much as possible. It features some front end features that allows you to add products to your cart for checkout."
+          info="This is an Amazon clone made to resemble the Amazon store as much as possible. It features some front end features that allows you to add products to your cart for checkout, and has user authentication."
+        />
+
+        <Project
+          weblink="https://spotify-clone-a2bb3.web.app/"
+          sourcecode="https://github.com/timchoe96/spotify-clone"
+          website={spotify}
+          title="Spotify Clone"
+          info="This is a Spotify clone made to resemble the Spotify music page. It uses the Spotify API to get profile information. I think it looks pretty close to the Spotify page, what do you think?"
         />
       </div>
     </div>

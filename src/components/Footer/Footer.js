@@ -18,7 +18,7 @@ function Footer() {
           className="hvr-underline-from-left"
           target="_blank"
           rel="noopener noreferrer"
-          href=""
+          href="https://drive.google.com/file/d/1cSNsLkNquRMnVDRf-_a1DVL14qx03C5n/view?usp=sharing"
         >
           Resume
         </a>
